@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadarsh Adhikari</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<Style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+    *{
+    list-style: none;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins' , serif;
+    
+    
+    }
+    body{
+        background-color: #E4E9F7;
+    }
+ .slide {
+    list-style-type: none;
+  margin: 0;
+  padding: 10px 14px;
+  width: 250px;
+  background-color:#FFF ;
+  position: fixed;
+  height: 100%;
+ 
+ }
+ 
+ 
+ ul li {
+    display: block;
+    font-size: 16px;
+    margin: 15px 5px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    text-transform: capitalize;
+
+ }
+.slide ul{
+    margin-top: 10%;
+}
+ul li:after{
+    content: " ";
+    height: 5px;
+    width: 0%;
+    transition: all .8s ease;
+    display:block;
+    bottom: 25%;
+}
+ul li:hover::after{
+    background-color: blue;
+    width:100%;
+}
+ul li:hover{
+    margin-left: 15px;
+    font-size: 20px;
+    box-shadow: 10px 10px 8px #888888;
+}
+ul li a{
+  color: black;
+}
+.slide  .logo img {
+  width: 50px;
+  border-radius: 5px;
+}
+.slide  .imgtext{
+ display: flex;
+ align-items: center;
+ font-weight: 500;
+ font-size: 17px;
+}
+.slide .logo{
+  min-width: 60px; 
+  display: flex;
+  align-items: center;
+}
+.section{
+    margin-left: 260px;
+
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 90%;
+    background: #5C5858;
+    border-radius: 15px;
+  }
+  .social a{
+     font-size: 20px;
+     text-decoration: none;
+     padding: 10px;
+     border-radius:50% ;
+     transition: 1s;
+  }
+  .fa-facebook{
+    color:white;
+    cursor: pointer;
+ }
+ .fa-facebook:hover{
+    color:blue;
+    background-color: white;
+ }
+ .fa-instagram{
+     color: white;
+    cursor: pointer;
+ }
+ .fa-instagram:hover{
+    color:orange;
+    background-color: white;
+ }
+ .fa-youtube{
+    color: white;
+    cursor: pointer;
+ }
+ .fa-youtube:hover{
+    color:red;
+    background-color: white;
+ }
+ .fa-twitter{
+     color:white;
+    cursor: pointer;
+ }
+ .fa-twitter:hover{
+    color:blue;
+    background-color: white;
+ }
+  footer p{
+   padding: 10px;
+   font-size: 20px;
+   color: white;
+   font-weight: bolder;
+   font-family: monospace;
+  }
+
+  .pname{
+    margin-left: 8%;
+    padding-top: 20px;
+}
+ .pname h1{
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  margin-right: 30%;
+  transition: 1s;
+
+
+ }
+.text{
+    color: rgb(243, 102, 8);
+    
+}
+.pname h1:hover{
+    color: rgb(58, 255, 9);
+    margin-left: lrem;
+}
+.pintro{
+ font-size: 30px;
+ margin-top: 15px;
+ font-family: 'Lato', sans-serif;
+ margin-right: 30%;
+
+}
+.pname  a {
+color: white;
+background-color: black;
+border-radius: 10px;
+font-size: 25px;
+display: inline-block;
+margin: 40px 0;
+padding: 10px 18px;
+font-family: 'Lato', sans-serif;
+
+
+}
+.pname a:hover{
+  transition: 1s;
+ background-color: rgb(58, 255, 9);
+ color: black;
+}
+ span nav.responnav {
+  display: none;
+}
+.checkbtn{
+float: right;
+margin-right: 40px;
+font-size: 30px;
+color: rgb(0, 0, 0);
+line-height: 50px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+@media (max-width:980px){
+  .section{
+    margin-left: 20px;
+  }
+    .slide{
+      display: none;
+    }
+    span nav.responnav{
+      display: block;
+    }
+    .checkbtn{
+      display: block;
+    }
+    .fa-close{
+        display: none;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:#43BFC7 ;
+      top: 50px;
+      left:-100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 30px;
+        }
+    a:hover,a.active{
+      color: #0083e6;
+      background: none;
+    }
+    #check:checked ~ ul{
+      left: 0;
+      
+    }
+    ul li:hover::after{
+    background-color: blue;
+    transform: scaleX(-50%) scaleY(-50%);
+}
+ul li:hover{
+  box-shadow: none;
+}
+  
+  }
+
+
+</Style>
+<body>
+<span>
+  <nav class="responnav">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars"></i>
+    </label>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="blank">Home</a></li>
+        <li><a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="blank">projects</a></li>
+        <li><a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="blank">Blog</a></li>
+        <li><a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="blank">contact</a></li>
+    </ul>
+</nav>
+</span>
+<nav class="slide">
+ <header>
+
+        <div class="imgtext"> 
+         <span class="logo"> 
+            <img src="logo.jpg" alt="logo">
+        </span>
+        <div class="slidebartext">
+            <span class="text">  Aadarsh Adhikari</span>
+        </div>
+       
+    </div>
+ </header>
+ <ul>
+    <li><a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="blank">Home</a></li>
+    <li><a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="blank">projects</a></li>
+    <li><a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="blank">Blog</a></li>
+    <li><a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="blank">Contact</a></li>
+    
+ </ul>
+</nav>
+<div class="section">
+    <section>
+        <div class="pname">
+          <h1> Aadarsh <span class="text">Adhikari</span></h1>
+          <p class="pintro">Hello world! this is my personal website to showcase my projects related to web development</p>
+          <a href="https://www.youtube.com/watch?v=QB7ACr7pUuE" target="blank">Browse my project </a> 
+        </div>
+         
+        </section>
+
+        <footer>
+          <div class="social">
+            <p> Contact </p>
+           <a  href="https://www.facebook.com/aadarshadh/" class="fa fa-facebook" target="blank"></a>
+           <a href="https://www.instagram.com/adhikari_aadarsh/" class="fa fa-instagram" target="blank"></a> 
+          <a href="https://www.youtube.com/channel/UC2A5G2LiT1sBC6YB9BkYMFQ/" class="fa fa-youtube" target="blank"></a>
+          <a href="https://twitter.com/AadarshAdhika13" class="fa fa-twitter" target="blank"></a> 
+        
+        </div>
+        <p  class="fo"> copyright &copy 2021 Aadarsh Adhikari</p>
+       
+        </footer>
+</div>
+</body> 
+</html>
